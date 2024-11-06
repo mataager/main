@@ -1,31 +1,31 @@
 // Function to update the favicon based on the theme
-function updateFavicon(theme) {
-  const favicon = document.getElementById("favicon");
-  if (theme === "dark") {
-    favicon.href = "./assets/img/favicons/favico2.png";
-  } else {
-    favicon.href = "./assets/img/favicons/favico1.png";
-  }
-}
+// function updateFavicon(theme) {
+//   const favicon = document.getElementById("favicon");
+//   if (theme === "dark") {
+//     favicon.href = "./assets/img/favicons/favico2.png";
+//   } else {
+//     favicon.href = "./assets/img/favicons/favico1.png";
+//   }
+// }
 
-// Check the current theme and update the favicon accordingly
-function applyTheme() {
-  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-  updateFavicon(theme);
-}
+// // Check the current theme and update the favicon accordingly
+// function applyTheme() {
+//   const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+//     ? "dark"
+//     : "light";
+//   updateFavicon(theme);
+// }
 
-// Listen for changes in the theme
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", (e) => {
-    const theme = e.matches ? "dark" : "light";
-    updateFavicon(theme);
-  });
+// // Listen for changes in the theme
+// window
+//   .matchMedia("(prefers-color-scheme: dark)")
+//   .addEventListener("change", (e) => {
+//     const theme = e.matches ? "dark" : "light";
+//     updateFavicon(theme);
+//   });
 
-// Apply the theme on page load
-applyTheme();
+// // Apply the theme on page load
+// applyTheme();
 
 //scrolling animation
 window.addEventListener("load", function () {
@@ -54,5 +54,3 @@ window.addEventListener("load", function () {
     element.classList.add("show");
   });
 });
-
-
