@@ -86,12 +86,14 @@
                                 const storeName = storeInfo["store-name"];
                                 const storeDetails = storeInfo["store-details"];
                                 const storeDomain = storeInfo["Domain"];
+                                const storePhoto = storeInfo["storePhoto"];
 
                                 // Create a new store card
                                 const storeCard = document.createElement("div");
                                 storeCard.className = "w-400 mb-6 animate-on-scroll show";
                                 storeCard.innerHTML = `
-              <div class="w-100 adadad0d h-100 p-5 services-card-shadow rounded-4 flex flex-column align-items-center">
+              <div class="w-100 h-100 p-5 services-card-shadow rounded-4 flex flex-column align-items-center">
+                <img class="available-width mb-3" src="${storePhoto}">
                 <h4 class="mt-3 lh-base">${storeName}</h4>
                 <p class="mb-0 txt-center">${storeDetails}</p>
                 <a href="https://${storeDomain}" target="_blank" class="btn btn-sm btn-primary mt-3">Visit Store</a>
