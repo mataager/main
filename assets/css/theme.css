@@ -23231,6 +23231,10 @@ iframe.yt-video.loaded {
   display: none !important;
 }
 
+.block {
+  display: block !important;
+}
+
 
 /* scroll animation  */
 .animate-on-scroll {
@@ -23285,4 +23289,204 @@ iframe.yt-video.loaded {
 
 .txt-center {
   text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.card-pointer {
+  background: #f7f7fc;
+  border: 2px solid #f0f8ff94 !important;
+}
+
+.card-pointer:hover {
+  background: white;
+  border: 2px solid #f7f7fc !important;
+}
+
+.docs-collapse {
+  background: #d2d0ef2e;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.font-xlarge {
+  font-size: x-large;
+}
+
+.col-00000099 {
+  color: #00000099;
+}
+
+.docs-collapse .nav-item a {
+  color: #000000a6;
+  /* Example color */
+}
+
+.docs-collapse .nav-item a:hover {
+  color: #000000a6;
+  /* Optional: A different color for hover effect */
+  text-decoration: underline;
+  /* Optional: Add underline on hover */
+}
+
+.collapse {
+  transition: height 0.3s ease-in-out;
+  /* Smooth transition for height */
+}
+
+.collapse.show {
+  transition: height 0.3s ease-in-out;
+  /* Smooth transition for height when shown */
+}
+
+/* Sidebar styling */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+  overflow-y: auto;
+}
+
+#sidebar.open {
+  left: 0;
+
+}
+
+.sidebarmob {
+  border-radius: 0px 20px 10px 0px;
+  padding: 10px;
+  background: #f0f0f0;
+  left: 0;
+  padding-top: 70px;
+  overflow: auto;
+  /* Enable scrolling */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: 0.2;
+  /* Set scrollbar width to thin for Firefox */
+}
+
+.sidebarmob::-webkit-scrollbar {
+  width: 0.2px !important;
+  /* Minimum width for WebKit-based browsers */
+}
+
+.sidebarmob::-webkit-scrollbar-track {
+  border-radius: 10px;
+  /* Border radius for scrollbar track */
+  background: #e0e0e0;
+  /* Light gray background for track */
+}
+
+.sidebarmob::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* Border radius for scrollbar thumb */
+  background: #888;
+  /* Gray color for thumb */
+}
+
+.sidebarmob::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Darker thumb color on hover */
+}
+
+#sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Overlay styling */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1049;
+  display: none;
+}
+
+#overlay.show {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  #sidebar {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #overlay {
+    display: none !important;
+  }
+}
+
+
+/* Sidebar content styling */
+#sidebar h5 {
+  cursor: pointer;
+}
+
+.fw-bold.pointer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse {
+  transition: height 0.3s ease;
+}
+
+.side-bar-btn {
+  z-index: 1000;
+  border: none;
+  border-radius: 0px 0px 100px 0px;
+  padding: 10px 20px 20px 10px;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: #6f42c1;
+  /* Green background */
+  color: white;
+  /* White text */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  /* Box shadow */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.side-bar-btn:hover {
+  background-color: #6f42c1;
+  /* Darker green on hover */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+  /* Enhance box shadow on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge the button on hover */
+}
+
+.side-bar-btn:active {
+  background-color: #6f42c1;
+  /* Even darker green when clicked */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow effect when pressed */
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black for overlay */
 }

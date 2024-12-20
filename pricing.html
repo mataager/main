@@ -118,6 +118,7 @@
                     </div>
 
                     <div class="pricing-plan text-animate3 premium-border3" id="plan3">
+
                         <h3>Premium</h3>
                         <div class="flex center">
                             <p class="mb-0 font-500">900 EGP
@@ -142,33 +143,37 @@
                         </ul>
                         <a href="#" plan-type="Premium" class="btn btn-sm btn-primary get-started-button">Get
                             Started</a>
+
                     </div>
 
-                    <div class="pricing-plan text-animate4 premium-border4" id="plan4">
-                        <h3>platinum</h3>
-                        <div class="flex center">
-                            <p class="mb-0 font-500">1300 EGP
-                            <p class="xs-font mt-2 mb-0 font-500">/mo</p>
+                    <div class="pricing-plan text-animate4 premium-border4 " id="plan4">
+                        <div class="opacity-50">
+                            <h3>platinum</h3>
+                            <div class="flex center">
+                                <p class="mb-0 font-500">1300 EGP
+                                <p class="xs-font mt-2 mb-0 font-500">/mo</p>
+                            </div>
+                            <p> 0% fees on every completed order</p>
+                            <hr>
+                            <ul class="plan-ul">
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>Private back-end with full access</li>
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>Free domain for 1 year</li>
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>free
+                                    apperance on Elite-gate site</li>
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>Ultimate performance speed</li>
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>Premium hosting </li>
+                                <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
+                                        style="color: #6f42c1;"></i>mobile app</li>
+                            </ul>
+                            <!-- <a href="#" plan-type="Platinum" class="btn btn-sm btn-primary get-started-button">Get
+                            Started</a> -->
+                            <a class="btn btn-sm btn-primary">comming soon</a>
                         </div>
-                        <p> 0% fees on every completed order</p>
-                        <hr>
-                        <ul class="plan-ul">
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>Private back-end with full access</li>
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>Free domain for 1 year</li>
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>free
-                                apperance on Elite-gate site</li>
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>Ultimate performance speed</li>
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>Premium hosting </li>
-                            <li class="mb-2"><i class="fa-solid fa-check mr-5 smaller-font"
-                                    style="color: #6f42c1;"></i>mobile app</li>
-                        </ul>
-                        <a href="#" plan-type="Platinum" class="btn btn-sm btn-primary get-started-button">Get
-                            Started</a>
                     </div>
                 </div>
 
@@ -204,20 +209,15 @@
                         <input type="text" class="form-control" id="store-name" required>
                     </div>
                     <div class="mb-3">
+                        <label for="cloud-id" class="form-label">Image Cloud ID</label>
+                        <input type="text" class="form-control" id="cloud-id" required>
+                        <a href="./docs.html" for="cloud id" class="form-label pointer">How i get my id ?</a>
+                    </div>
+                    <div class="mb-3">
                         <label for="Store Details" class="form-label">Store Details</label>
                         <textarea type="text" placeholder="ex:the store will selling mens perfumes and t-shirts"
                             class="form-control" id="store-Details" required></textarea>
                     </div>
-                    <!-- <div class="mb-3">
-                        <label for="planType" class="form-label">Plan Type</label>
-                        <select class="form-control form-select" id="planType">
-                            <option value="Basic">Basic</option>
-                            <option value="Standard">Standard</option>
-                            <option value="Premium">Premium</option>
-                            <option value="Platinum">Platinum</option>
-                        </select>
-                    </div>
-                    -->
                     <div class="mb-3">
                         <label for="planType" class="form-label">Selected Plan</label>
                         <input type="text" class="form-control" id="PlanType" readonly>
@@ -335,6 +335,7 @@
                     name: document.getElementById("fullName").value,
                     phone: document.getElementById("phone").value,
                     "store-name": document.getElementById("store-name").value,
+                    "cloud-id": document.getElementById("cloud-id").value,
                     "store-details": document.getElementById("store-Details").value,
                     plan: plan  // Use the value of the hidden input to send the plan type
                 };
@@ -372,7 +373,6 @@
             });
         });
 
-        
 
     </script>
 
