@@ -23498,3 +23498,7 @@ iframe.yt-video.loaded {
   background: rgba(0, 0, 0, 0.5);
   /* Semi-transparent black for overlay */
 }
+
+.available-width {
+  width: -webkit-fill-available;
+}

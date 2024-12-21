@@ -194,7 +194,7 @@
                         <!-- Cards Section -->
                         <div class="row justify-content-center gy-4 mb-4">
                             <!-- Card 1: Getting Started -->
-                            <div class="col-12 col-md-3 col-lg-3 pointer">
+                            <div class="col-12 col-md-3 col-lg-3 pointer" data-target="Gettingstarrted">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
                                         <i class="fa-solid fa-rocket text-primary font-medium"></i>
@@ -202,7 +202,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3 col-lg-3 pointer">
+                            <div class="col-12 col-md-3 col-lg-3 pointer" data-target="imagescloud">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
                                         <i class="fa-solid fa-cloud-arrow-up text-primary font-medium"></i>
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-3 col-lg-3 pointer">
+                            <div class="col-12 col-md-3 col-lg-3 pointer" data-target="webstore">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
                                         <i class="fa-solid fa-store text-primary font-medium"></i>
@@ -220,14 +220,14 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-3 col-lg-3 pointer">
+                            <!-- <div class="col-12 col-md-3 col-lg-3 pointer" data-target="webstore">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
                                         <i class="fas fa-rocket text-primary font-medium"></i>
                                         <h6 class="fw-semibold m-0">Getting Started</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- Info Box -->
@@ -240,27 +240,111 @@
                         </div>
 
                         <!-- Article Section -->
-                        <div class="mb-4">
-                            <h4 class="fw-semibold">Article Topic 1</h4>
-                            <p>
-                                Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac
-                                cursus
-                                commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                Maecenas
-                                faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor
-                                ligula.
-                            </p>
+                        <div class="mb-4 article-section" id="Gettingstarrted">
+                            <h4 class="fw-semibold">Getting Started</h4>
+                            <p>Follow these simple <strong>5</strong> steps to get started:</p>
+                            <ol class="p-0 flex flex-column gap-3">
+                                <li>
+                                    1-Visit our <a href="./pricing.html">pricing page</a> to explore available plans.
+                                </li>
+                                <img class="available-width" src="./assets/img/docs/pricing page.jpg">
+                                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                    <div>
+                                        The price and features of plans may change from
+                                        time to time.
+                                        We recommend reviewing the details before making a selection.
+                                    </div>
+
+                                </div>
+                                <li>
+                                    2-Select the plan that best suits your needs.
+                                </li>
+                                <li>
+                                    3-Click on the <strong>Get Started</strong> button.
+                                </li>
+                                <li>
+                                    4-Fill out the form and hit <strong>Submit</strong>.
+                                </li>
+                                <img class="available-width" src="./assets/img/docs/plan-form.jpg">
+                                <div class="alert alert-info d-flex align-items-center" role="alert">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <div>
+                                        Please ensure you have entered a valid phone number and email address, as we
+                                        will contact you and deliver your store
+                                        based on this information.
+                                    </div>
+
+
+                                </div>
+                                <li>
+                                    5-Your request will be sent to our team. Please allow 24 to 48 hours for your site
+                                    to
+                                    be completed and
+                                    deployed.
+                                </li>
+                            </ol>
                         </div>
 
-                        <!-- Highlight Box -->
-                        <div class="alert alert-warning d-flex align-items-center" role="alert">
-                            <i class="fas fa-exclamation-triangle me-2"></i>
-                            <div>
-                                <strong>Please note:</strong> Morbi leo risus, porta ac consectetur ac, vestibulum at
-                                eros.
-                                Donec sed odio dui.
-                            </div>
+                        <div class="mb-4 article-section" id="imagescloud" style="display: none;">
+                            <h4 class="fw-semibold">Images Cloud</h4>
+                            <p>Follow these simple <strong>5</strong> steps to set up your Images Cloud:</p>
+                            <ol class="p-0 flex flex-column gap-3">
+                                <li>
+                                    1. Visit <a href="https://api.imgur.com/oauth2/addclient" target="_blank">Imgur</a>
+                                    to get started.
+                                </li>
+                                <img class="available-width" src="./assets/img/docs/imgur.jpg"
+                                    alt="Imgur Registration Page">
+                                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                    <div>
+                                        Please note that the features and pricing of Imgur plans may change over time.
+                                        Review the details
+                                        carefully before proceeding.
+                                    </div>
+                                </div>
+                                <li>
+                                    2. Create an Imgur account using Google or any other preferred method.
+                                </li>
+                                <li>
+                                    3. After logging in, you will be redirected to the <a
+                                        href="https://api.imgur.com/oauth2/addclient" target="_blank">Imgur API</a>
+                                    page.
+                                </li>
+                                <img class="available-width" src="./assets/img/docs/addclient.png"
+                                    alt="Imgur API Client Registration">
+                                <li>
+                                    4. Register your application using the Postman callback URL:
+                                    <strong>https://www.getpostman.com/oauth2/callback</strong>.
+                                </li>
+                                <li>
+                                    5. Fill out the required form and click <strong>Submit</strong>.
+                                </li>
+                                <li>
+                                    6. Copy the client ID displayed after successfully creating the application.
+                                </li>
+                                <div class="alert alert-info d-flex align-items-center" role="alert">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <div>
+                                        If you lose access to the page, go to <a
+                                            href="https://imgur.com/account/settings/apps" target="_blank">Imgur
+                                            Settings</a> to retrieve your client ID.
+                                    </div>
+                                </div>
+                                <img class="available-width" src="./assets/img/docs/imgursettings.png"
+                                    alt="Imgur Settings Page">
+                                <li>
+                                    7. Paste the client ID into the "Image Cloud ID" input field in the Getting Started
+                                    form.
+                                </li>
+                            </ol>
                         </div>
+
+
+
+                        <!-- Highlight Box -->
+
                     </div>
 
 
@@ -345,6 +429,28 @@
                 }
             });
 
+            //
+            document.addEventListener("DOMContentLoaded", () => {
+                const cards = document.querySelectorAll(".row .pointer");
+                const sections = document.querySelectorAll(".article-section");
+
+                cards.forEach(card => {
+                    card.addEventListener("click", () => {
+                        const targetId = card.getAttribute("data-target");
+
+                        // Hide all sections
+                        sections.forEach(section => {
+                            section.style.display = "none";
+                        });
+
+                        // Show the selected section
+                        const targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            targetSection.style.display = "block";
+                        }
+                    });
+                });
+            });
 
         </script>
 
