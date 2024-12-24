@@ -23301,12 +23301,10 @@ iframe.yt-video.loaded {
 
 .card-pointer {
   background: #d2d0ef96;
-  border: 2px solid #f0f8ff94 !important;
 }
 
 .card-pointer:hover {
   background: white;
-  border: 2px solid #f7f7fc !important;
 }
 
 .docs-collapse {
@@ -23501,4 +23499,11 @@ iframe.yt-video.loaded {
 
 .available-width {
   width: -webkit-fill-available;
+}
+
+.docs-img {
+  /* border: 1px solid #d2d0ef;
+  /*  */
+  border-radius: 10px;
+  padding: 5px;
 }

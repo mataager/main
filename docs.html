@@ -56,23 +56,24 @@
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#intro-section">
                                     <h5 class="m-0">
+                                        <i class="fa-solid fa-house me-1"></i>
                                         Introduction
                                     </h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="intro-section" class="nav collapse">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="Gettingstarted">
                                             <a href="#">Getting started</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
-                                            <a href="#">Building ads/checkouts</a>
+                                        <li class="nav-item mb-2 mt-2" data-target="imagescloud">
+                                            <a href="#">Images Cloud</a>
+                                        </li>
+                                        <li class="nav-item mb-2 mt-2" data-target="webstore-docs">
+                                            <a href="#">Web Store</a>
                                         </li>
                                         <li class="nav-item mb-2 mt-2">
-                                            <a href="#">Deploying ads</a>
-                                        </li>
-                                        <li class="nav-item mb-2 mt-2">
-                                            <a href="#">Tracking & reporting</a>
+                                            <a href="#">Matager Account</a>
                                         </li>
                                         <li class="nav-item mb-2 mt-2">
                                             <a href="#">Settings</a>
@@ -83,20 +84,18 @@
                             <nav class="d-flex docs-collapse flex-column">
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#product-section">
-                                    <h5 class="m-0">
-                                        Products
-                                    </h5>
+                                    <h5 class="m-0"><i class="fa-solid fa-shirt me-1"></i>Products</h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="product-section" class="nav flex-column collapse gap-2">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="AddProduct">
                                             <a href="#">Add Product</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="EditProduct">
                                             <a href="#">Edit Product</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="DeleteProduct">
                                             <a href="#">Delete Product</a>
                                         </li>
                                     </div>
@@ -106,84 +105,91 @@
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#orders-section">
                                     <h5 class="m-0">
+                                        <i class="fa-solid fa-dolly me-1"></i>
                                         Orders
                                     </h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="orders-section" class="nav flex-column collapse gap-2">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="Orderstypes">
                                             <a href="#">Orders types</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="Ordersdetails">
                                             <a href="#">Orders details</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="Searchorder">
                                             <a href="#">Search order</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="Acceptorder">
                                             <a href="#">Accept order</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="Cancelorder">
                                             <a href="#">Cancel order</a>
                                         </li>
-                                        <li class="nav-item mb-2 mt-2">
+                                        <li class="nav-item mb-2 mt-2" data-target="Orderinvoice">
                                             <a href="#">Order invoice</a>
                                         </li>
                                     </div>
                                 </ul>
+
                             </nav>
                             <nav class="d-flex docs-collapse flex-column">
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#balance-section">
                                     <h5 class="m-0">
+                                        <i class="fa-solid fa-dollar-sign me-1"></i>
                                         Balance
                                     </h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="balance-section" class="nav flex-column collapse gap-2">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="BalanceOverview">
                                             <a href="#">Overview</a>
                                         </li>
                                     </div>
                                 </ul>
+
                             </nav>
                             <nav class="d-flex docs-collapse flex-column">
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#customer-service-section">
                                     <h5 class="m-0">
+                                        <i class="fa-solid fa-headset me-1"></i>
                                         Customer Service
                                     </h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="customer-service-section" class="nav flex-column collapse gap-2">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="CustomerServiceOverview">
                                             <a href="#">Overview</a>
                                         </li>
                                     </div>
                                 </ul>
+
                             </nav>
                             <nav class="d-flex docs-collapse flex-column">
                                 <div class="fw-bold pointer flex flex-between-center" data-bs-toggle="collapse"
                                     data-bs-target="#reporting-section">
                                     <h5 class="m-0">
+                                        <i class="fa-solid fa-flag me-1"></i>
                                         Reporting
                                     </h5>
                                     <i class="bi bi-caret-right-fill text-primary"></i>
                                 </div>
                                 <ul id="reporting-section" class="nav flex-column collapse gap-2">
                                     <div class="flex flex-column gap-2 ml-10">
-                                        <li class="nav-item mb-2 mt-3">
+                                        <li class="nav-item mb-2 mt-3" data-target="ReportingOverview">
                                             <a href="#">Overview</a>
                                         </li>
                                     </div>
                                 </ul>
+
                             </nav>
                         </div>
                     </div>
-
                     <!-- Main Content -->
                     <div class="col-md-9">
                         <!-- Header -->
@@ -192,8 +198,8 @@
                             <p class="text-muted">Reading time: 5 mins | Published 11/09/2023 | Level: Intermediate</p>
                         </div>
                         <!-- Cards Section -->
-                        <div class="row justify-content-center gy-4 mb-4">
-                            <!-- Card 1: Getting Started -->
+                        <!-- <div class="row justify-content-center gy-4 mb-4">
+                          
                             <div class="col-12 col-md-3 col-lg-3 pointer" data-target="Gettingstarrted">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
@@ -211,7 +217,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-3 col-lg-3 pointer" data-target="webstore">
+                            <div class="col-12 col-md-3 col-lg-3 pointer" data-target="webstore-docs">
                                 <div class="card shadow-sm border-0 text-center card-pointer">
                                     <div class="flex align-items-center justify-content-center p-3 gap-2">
                                         <i class="fa-solid fa-store text-primary font-medium"></i>
@@ -220,34 +226,18 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="col-12 col-md-3 col-lg-3 pointer" data-target="webstore">
-                                <div class="card shadow-sm border-0 text-center card-pointer">
-                                    <div class="flex align-items-center justify-content-center p-3 gap-2">
-                                        <i class="fas fa-rocket text-primary font-medium"></i>
-                                        <h6 class="fw-semibold m-0">Getting Started</h6>
-                                    </div>
-                                </div>
-                            </div> -->
 
-                        </div>
-                        <!-- Info Box -->
-                        <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
-                            <i class="fas fa-info-circle me-2"></i>
-                            <div>
-                                There is more information on this topic on the marketer's page.
-                                <a href="#" class="text-primary fw-semibold">Go to marketer's page</a>
-                            </div>
-                        </div>
+                        </div> -->
 
                         <!-- Article Section -->
-                        <div class="mb-4 article-section" id="Gettingstarrted">
+                        <div class="mb-4 article-section" id="GettingStarted">
                             <h4 class="fw-semibold">Getting Started</h4>
                             <p>Follow these simple <strong>5</strong> steps to get started:</p>
-                            <ol class="p-0 flex flex-column gap-3">
+                            <ol class="p-0 flex flex-column gap-3" id="Gettingstarted">
                                 <li>
                                     1-Visit our <a href="./pricing.html">pricing page</a> to explore available plans.
                                 </li>
-                                <img class="available-width" src="./assets/img/docs/pricing page.jpg">
+                                <img class="available-width docs-img" src="./assets/img/docs/pricing page.jpg">
                                 <div class="alert alert-warning d-flex align-items-center" role="alert">
                                     <i class="fas fa-exclamation-triangle me-2"></i>
                                     <div>
@@ -266,7 +256,7 @@
                                 <li>
                                     4-Fill out the form and hit <strong>Submit</strong>.
                                 </li>
-                                <img class="available-width" src="./assets/img/docs/plan-form.jpg">
+                                <img class="available-width docs-img" src="./assets/img/docs/plan-form.jpg">
                                 <div class="alert alert-info d-flex align-items-center" role="alert">
                                     <i class="bi bi-info-circle me-2"></i>
                                     <div>
@@ -294,7 +284,7 @@
                                     1. Visit <a href="https://api.imgur.com/oauth2/addclient" target="_blank">Imgur</a>
                                     to get started.
                                 </li>
-                                <img class="available-width" src="./assets/img/docs/imgur.jpg"
+                                <img class="available-width docs-img" src="./assets/img/docs/imgur.jpg"
                                     alt="Imgur Registration Page">
                                 <div class="alert alert-warning d-flex align-items-center" role="alert">
                                     <i class="fas fa-exclamation-triangle me-2"></i>
@@ -312,7 +302,7 @@
                                         href="https://api.imgur.com/oauth2/addclient" target="_blank">Imgur API</a>
                                     page.
                                 </li>
-                                <img class="available-width" src="./assets/img/docs/addclient.png"
+                                <img class="available-width docs-img" src="./assets/img/docs/addclient.png"
                                     alt="Imgur API Client Registration">
                                 <li>
                                     4. Register your application using the Postman callback URL:
@@ -332,7 +322,7 @@
                                             Settings</a> to retrieve your client ID.
                                     </div>
                                 </div>
-                                <img class="available-width" src="./assets/img/docs/imgursettings.png"
+                                <img class="available-width docs-img" src="./assets/img/docs/imgursettings.png"
                                     alt="Imgur Settings Page">
                                 <li>
                                     7. Paste the client ID into the "Image Cloud ID" input field in the Getting Started
@@ -340,14 +330,105 @@
                                 </li>
                             </ol>
                         </div>
+                        <div class="mb-4 article-section" id="webstore-docs" style="display: none;">
+                            <h4 class="fw-semibold">Website Customization</h4>
+                            <ol class="p-0 flex flex-column gap-3">
+                                <li>
+                                    <strong>Personalized Store Setup:</strong> We will contact you to customize your
+                                    store's main visuals, such as the banner image, and set
+                                    up additional details like free shipping options, promotional banners, and more to
+                                    reflect your brand identity.
+                                </li>
 
+                                <li>
+                                    <strong>Comprehensive Documentation:</strong> Our detailed guides will walk you
+                                    through updating your store information, including
+                                    product details, categories, and store policies. With step-by-step instructions,
+                                    you'll quickly learn how to navigate
+                                    the system and manage your store effortlessly.
+                                </li>
+                                <li>
+                                    <strong>Thorough Testing and Seamless Launch:</strong> Once the setup is complete,
+                                    we will rigorously test your website to ensure
+                                    everything works seamlessly before launch, giving you peace of mind.
+                                </li>
+                                <li>
+                                    <strong>Ongoing Support and Updates:</strong> Enjoy regular system updates and
+                                    expert support to help you keep your store running
+                                    smoothly and adapt to new features.
+                                </li>
 
-
-                        <!-- Highlight Box -->
-
+                            </ol>
+                        </div>
+                        <div class="mb-4 article-section" id="Product-docs" style="display: none;">
+                            <h4 class="fw-semibold">Products</h4>
+                            <ol class="p-0 flex flex-column gap-3" id="AddProduct" style="display: none;">
+                                Add
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/1.png">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/2.jpg">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/3.jpg">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/4.jpg">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/5.jpg">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/6.jpg">
+                                </li>
+                            </ol>
+                            <ol class="p-0 flex flex-column gap-3" id="EditProduct" style="display: none;">
+                                Edit
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/7.png">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/8.png">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/9.png">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/10.png">
+                                </li>
+                            </ol>
+                            <ol class="p-0 flex flex-column gap-3" id="DeleteProduct" style="display: none;">
+                                delete
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/11.png">
+                                </li>
+                                <li>
+                                    <img class="available-width docs-img" src="./assets/img/docs/product/12.png">
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="mb-4 article-section" id="Orders-docs" style="display: none;">
+                            <h4 class="fw-semibold">Orders</h4>
+                            <ol class="p-0 flex flex-column gap-3" id="addorder">
+                            </ol>
+                        </div>
+                        <div class="mb-4 article-section" id="Balance-docs" style="display: none;">
+                            <h4 class="fw-semibold">Balance</h4>
+                            <ol class="p-0 flex flex-column gap-3">
+                            </ol>
+                        </div>
+                        <div class="mb-4 article-section" id="CustomerService-docs" style="display: none;">
+                            <h4 class="fw-semibold">Customer Service</h4>
+                            <ol class="p-0 flex flex-column gap-3">
+                            </ol>
+                        </div>
+                        <div class="mb-4 article-section" id="Reporting-docs" style="display: none;">
+                            <h4 class="fw-semibold">Reporting</h4>
+                            <ol class="p-0 flex flex-column gap-3">
+                            </ol>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
             </div>
@@ -358,25 +439,22 @@
 
                 toggles.forEach(toggle => {
                     const target = document.querySelector(toggle.dataset.bsTarget);
-                    const icon = toggle.querySelector("i");
+                    const caretIcon = toggle.querySelector(".bi");
+
+                    if (!caretIcon) return; // Skip if there's no caret icon in the toggle element
 
                     // Listen for the collapse animation events
                     target.addEventListener("show.bs.collapse", () => {
-                        icon.classList.remove("bi-caret-right-fill");
-                        icon.classList.add("bi-caret-down-fill");
+                        caretIcon.classList.remove("bi-caret-right-fill");
+                        caretIcon.classList.add("bi-caret-down-fill");
                     });
 
                     target.addEventListener("hide.bs.collapse", () => {
-                        icon.classList.remove("bi-caret-down-fill");
-                        icon.classList.add("bi-caret-right-fill");
+                        caretIcon.classList.remove("bi-caret-down-fill");
+                        caretIcon.classList.add("bi-caret-right-fill");
                     });
                 });
             });
-
-        </script>
-
-        <script>
-
 
             // Initial state
             const sidebar = document.getElementById('sidebar');
@@ -429,30 +507,117 @@
                 }
             });
 
+
             //
+            // document.addEventListener("DOMContentLoaded", () => {
+            //     const clickableElements = document.querySelectorAll("[data-target]");
+            //     const sections = document.querySelectorAll(".article-section");
+
+            //     clickableElements.forEach(element => {
+            //         element.addEventListener("click", () => {
+            //             const targetId = element.getAttribute("data-target");
+
+            //             // Hide all sections initially
+            //             sections.forEach(section => {
+            //                 section.style.display = "none";
+            //             });
+
+            //             // Show the selected section (Product-docs in this case)
+            //             const targetSection = document.getElementById("Product-docs");
+            //             if (targetSection) {
+            //                 targetSection.style.display = "block"; // Display the Product-docs div
+            //             }
+
+            //             // Hide the other sections inside Product-docs and show the clicked one
+            //             const allProductSections = document.querySelectorAll("#AddProduct, #EditProduct, #DeleteProduct");
+            //             allProductSections.forEach(section => {
+            //                 section.style.display = "none"; // Hide all product-related sections
+            //             });
+
+            //             const targetProductSection = document.getElementById(targetId);
+            //             if (targetProductSection) {
+            //                 targetProductSection.style.display = "block"; // Show the specific product section (e.g., AddProduct)
+            //             }
+
+            //             // Scroll to the selected section
+            //             targetProductSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            //         });
+            //     });
+            // });
+
+            //v//
+
+            // document.addEventListener("DOMContentLoaded", () => {
+            //     const clickableElements = document.querySelectorAll("[data-target]");
+            //     const sections = document.querySelectorAll(".article-section");
+
+            //     clickableElements.forEach(element => {
+            //         element.addEventListener("click", () => {
+            //             const targetId = element.getAttribute("data-target");
+
+            //             // Find the parent section (e.g., Product-docs)
+            //             const parentSection = document.querySelector("#Product-docs");
+            //             if (parentSection) {
+            //                 parentSection.style.display = "block"; // Ensure the parent section is displayed
+            //             }
+
+            //             // Ensure all nested <ol> are initially hidden
+            //             const nestedElements = parentSection.querySelectorAll("ol");
+            //             nestedElements.forEach(ol => {
+            //                 ol.style.display = "none";
+            //             });
+
+            //             // Show the target nested <ol>
+            //             const targetSection = document.getElementById(targetId);
+            //             if (targetSection) {
+            //                 targetSection.style.display = "block"; // Display the targeted <ol>
+
+            //                 // Smooth scroll to the specific target <ol>
+            //                 targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            //             }
+            //         });
+            //     });
+            // });
             document.addEventListener("DOMContentLoaded", () => {
-                const cards = document.querySelectorAll(".row .pointer");
-                const sections = document.querySelectorAll(".article-section");
+                const clickableElements = document.querySelectorAll("[data-target]");
 
-                cards.forEach(card => {
-                    card.addEventListener("click", () => {
-                        const targetId = card.getAttribute("data-target");
+                clickableElements.forEach(element => {
+                    element.addEventListener("click", () => {
+                        const targetId = element.getAttribute("data-target");
 
-                        // Hide all sections
-                        sections.forEach(section => {
+                        // Hide all parent sections initially
+                        const allParentSections = document.querySelectorAll("div.article-section");
+                        allParentSections.forEach(section => {
                             section.style.display = "none";
                         });
 
-                        // Show the selected section
+                        // Find the target section
                         const targetSection = document.getElementById(targetId);
                         if (targetSection) {
+                            // Find the closest parent div and ensure it is displayed
+                            const parentSection = targetSection.closest("div.article-section");
+                            if (parentSection) {
+                                parentSection.style.display = "block"; // Display the parent section
+                            }
+
+                            // Ensure all nested <ol> in the parent section are hidden
+                            const nestedElements = parentSection.querySelectorAll("ol");
+                            nestedElements.forEach(ol => {
+                                ol.style.display = "none";
+                            });
+
+                            // Display the targeted <ol>
                             targetSection.style.display = "block";
+
+                            // Scroll to the targeted <ol> smoothly
+                            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
                         }
                     });
                 });
             });
 
         </script>
+
 
     </main>
 
