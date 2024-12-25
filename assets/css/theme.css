@@ -23375,13 +23375,14 @@ iframe.yt-video.loaded {
   /* Enable scrolling */
   -ms-overflow-style: none;
   /* Hide scrollbar for IE and Edge */
-  scrollbar-width: 0.2;
-  /* Set scrollbar width to thin for Firefox */
+  scrollbar-width: thin;
+  /* Thin scrollbar for Firefox */
 }
 
+/* WebKit-based browsers (Chrome, Safari, Edge (Chromium)) */
 .sidebarmob::-webkit-scrollbar {
-  width: 0.2px !important;
-  /* Minimum width for WebKit-based browsers */
+  width: 1px;
+  /* Set scrollbar width to 5px */
 }
 
 .sidebarmob::-webkit-scrollbar-track {
@@ -23401,6 +23402,16 @@ iframe.yt-video.loaded {
 .sidebarmob::-webkit-scrollbar-thumb:hover {
   background: #555;
   /* Darker thumb color on hover */
+}
+
+/* For Firefox */
+@supports (scrollbar-width: thin) {
+  .sidebarmob {
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #888 #e0e0e0;
+    /* Thumb color and track color */
+  }
 }
 
 #sidebar .close-btn {
@@ -23455,6 +23466,7 @@ iframe.yt-video.loaded {
 }
 
 .side-bar-btn {
+  display: none;
   z-index: 1000;
   border: none;
   border-radius: 0px 0px 100px 0px;
@@ -23474,6 +23486,12 @@ iframe.yt-video.loaded {
   /* Box shadow */
   transition: all 0.3s ease;
   /* Smooth transition for hover effect */
+}
+
+@media (max-width: 719px) {
+  .side-bar-btn {
+    display: block;
+  }
 }
 
 .side-bar-btn:hover {
@@ -23506,4 +23524,13 @@ iframe.yt-video.loaded {
   /*  */
   border-radius: 10px;
   padding: 5px;
+}
+
+.title-docs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #d2d0ef2e;
+  padding: 10px;
 }
